@@ -50,7 +50,7 @@ glm_predict_climate = function(majors, pop_ord, climate, second_climate){
   return(predictions)
 }
 
-generate_null = function(lcwp_non_assocs,nloci,win=FALSE)
+generate_null = function(lcwp_non_assocs,nloci,win=FALSE) {
   concordant_counts = as.data.frame(matrix(NA,nrow=1000,ncol=5))
   for(j in 1:1000){
     print(paste0(j))
