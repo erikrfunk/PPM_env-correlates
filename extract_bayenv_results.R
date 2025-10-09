@@ -12,7 +12,7 @@ for(i in 1:length(vars)){ #Extract the columns corresponding to the desired vari
 }
 
 f_results = list.files(".","*results.txt$",full.names = F)
-BFpercent = 0.05
+BFpercent = 0.01
 Rhopercent = 0.05
 for(i in f_results){
   results = read.table(i,header=T)
